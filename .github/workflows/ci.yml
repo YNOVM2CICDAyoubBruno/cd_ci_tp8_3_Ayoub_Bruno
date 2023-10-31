@@ -17,7 +17,7 @@ jobs:
         run: docker compose up -d
 
       - name: Init BDD
-        run: docker compose exec db1 mysql -D my_database -p"example" -h db1 -u root
+        run: docker compose exec db1 mysql -p"example" -h db1 -u root
 
       - name: Afficher la page web associée
         run: curl localhost
