@@ -23,4 +23,4 @@ jobs:
         run: curl localhost
 
       - name: Stopper les conteneurs
-        run: docker ps | cut -d ' ' -f1 | tail -n +2 | paste -s | docker kill
+        run: docker container kill $(docker ps | cut -d ' ' -f1 | tail -n +2 | paste -s)
