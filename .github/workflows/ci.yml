@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build:
+  Explore-GitHub-Actions:
     runs-on: linux,x64,gpu
 
     steps:
