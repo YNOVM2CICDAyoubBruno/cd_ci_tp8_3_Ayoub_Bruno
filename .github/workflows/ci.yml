@@ -21,6 +21,3 @@ jobs:
 
       - name: Afficher la page web associée
         run: sleep 10 ; docker compose exec nginx curl localhost
-
-      - name: Stopper les conteneurs
-        run: docker compose down
