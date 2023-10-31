@@ -20,7 +20,7 @@ jobs:
         run: docker compose exec db1 mysql -p"example" -h db1 -u root
 
       - name: Afficher la page web associée
-        run: sleep 30 ; curl localhost
+        run: sleep 30 ; curl localhost:8000
 
       - name: Stopper les conteneurs
         run: docker compose down
