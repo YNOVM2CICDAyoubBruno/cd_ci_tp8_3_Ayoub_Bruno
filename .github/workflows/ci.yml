@@ -7,7 +7,7 @@ on:
 
 jobs:
   Explore-GitHub-Actions:
-    runs-on: linux,x64,gpu
+    runs-on: vm
 
     steps:
       - name: Check out repo
