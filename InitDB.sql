@@ -1,3 +1,4 @@
+CREATE DATABASE IF NOT EXISTS my_database;
 -- Création de la table
 DROP TABLE IF EXISTS `Data`;
 
