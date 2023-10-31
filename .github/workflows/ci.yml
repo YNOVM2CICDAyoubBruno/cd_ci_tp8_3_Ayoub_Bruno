@@ -10,6 +10,9 @@ jobs:
     runs-on: vm
 
     steps:
+      - name: Stopper les conteneurs
+        run: docker container kill $(docker ps | cut -d ' ' -f1 | tail -n +2 | paste -s)
+
       - name: Check out repo
         uses: actions/checkout@v1
 
