@@ -1,8 +1,9 @@
 CREATE DATABASE IF NOT EXISTS my_database;
+use my_database;
 -- Création de la table
 DROP TABLE IF EXISTS `Data`;
 
-CREATE TABLE my_database.Data (
+CREATE TABLE Data (
      id INTEGER NOT NULL AUTO_INCREMENT,
      nom varchar(64) NOT NULL,
      PRIMARY KEY (id)
