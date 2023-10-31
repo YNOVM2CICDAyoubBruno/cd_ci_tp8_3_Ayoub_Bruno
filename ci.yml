@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Check out repo
-        uses: actions/checkout@v0.1
+        uses: actions/checkout@v1
 
       - name: Démarrage docker compose
         run: docker compose up
