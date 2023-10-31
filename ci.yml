@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: debian-bullseye
+    runs-on: myoung34/github-runner:debian-bullseye
 
     steps:
       - name: Check out repo
