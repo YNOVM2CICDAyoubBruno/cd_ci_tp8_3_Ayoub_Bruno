@@ -1,0 +1,26 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v0.1
+
+      - name: Démarrage docker compose
+        run: docker compose up
+
+      - name: Init BDD
+        run: mysql -p my_database InitDB.sql
+
+      - name: Afficher la page web associée
+        run: curl localhost
+
+      - name: Stopper les conteneurs
+        run: docker ps | cut -d ' ' -f1 | tail -n +2 | paste -s | docker kill
