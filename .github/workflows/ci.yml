@@ -20,7 +20,7 @@ jobs:
         run: sleep 20 ; docker compose exec -T db1 mysql -pexample -u root < InitDB.sql
 
       - name: Afficher la page web associée
-        run: sleep 10 ; docker compose exec nginx curl localhost
+        run: sleep 10 && docker compose exec nginx curl localhost
 
       - name: Stopper les conteneurs
         run: docker compose down
