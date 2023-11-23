@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--DOCTYP E   html-->
+<!DOCTYPE html><!--DOCTYPE   html-->
 <html lang="fr">
 <head>
     <meta charset="UTF-8"/>
